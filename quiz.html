@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Take Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="link" href="index.html">Back Home</a>
+      </nav>
+      <header>
+        <h1>Triangle Quiz</h1>
+      </header>
+      <form class="quiz-form">
+        <div class="quiz-container">
+          <p>
+            What is the third angle for the triangle where angle1 = 45° and
+            angle2 = 45°?
+          </p>
+          <label>
+            <input type="radio" name="questionOne" value="45°" required />
+            45°
+          </label>
+          <label>
+            <input type="radio" name="questionOne" value="60°" required />
+            60°
+          </label>
+          <label>
+            <input type="radio" name="questionOne" value="90°" required />
+            90°
+          </label>
+        </div>
+
+        <div class="quiz-container">
+          <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+          <label>
+            <input type="radio" name="questionTwo" value="obtuse" required />
+            obtuse
+          </label>
+          <label>
+            <input type="radio" name="questionTwo" value="acute" required />
+            acute
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="questionTwo"
+              value="right angled"
+              required
+            />
+            right angled
+          </label>
+        </div>
+
+        <div class="quiz-container">
+          <p>
+            If all the internal angles of triangle are 60 degrees. Then it is
+            equilateral triangle?
+          </p>
+          <label>
+            <input type="radio" name="questionThree" value="true" required />
+            True
+          </label>
+          <label>
+            <input type="radio" name="questionThree" value="false" required />
+            false
+          </label>
+        </div>
+
+        <div class="quiz-container">
+          <p>A scalene triangle has how many sides of equal length?</p>
+          <label>
+            <input type="radio" name="questionFour" value="two" required />
+            2
+          </label>
+          <label>
+            <input type="radio" name="questionFour" value="three" required />
+            3
+          </label>
+          <label>
+            <input type="radio" name="questionFour" value="none" required />
+            none
+          </label>
+        </div>
+
+        <div class="quiz-container">
+          <p>
+            What is the name of the segment that joins the midpoints of the
+            sides of a triangle?
+          </p>
+          <label>
+            <input type="radio" name="questionFive" value="median" required />
+            Median
+          </label>
+          <label>
+            <input type="radio" name="questionFive" value="centroid" required />
+            Centroid
+          </label>
+          <label>
+            <input type="radio" name="questionFive" value="vertex" required />
+            Vertex
+          </label>
+        </div>
+      </form>
+      <button class="btn" id="btn-submit">Submit Answers</button>
+      <button class="btn" id="btn-reset">Reset Answers</button>
+      <div id="output"></div>
+    </div>
+    <script src="./src/quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #003049;
+  --primary-color: #30161a;
+  --focus-border: #680c1b;
+  --white-color: #fff;
+}
+
+html {
+  color: var(--primary-color);
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  height: 100vh;
+}
+
+.menu-links {
+  display: block;
+  text-decoration: none;
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1rem;
+  transition: 0.2s all ease-in-out;
+}
+
+.menu-links:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+  transform: scale(1.2);
+}
+
+nav {
+  width: fit-content;
+  margin: 1rem;
+  margin-left: -3rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: var(--primary-color);
+}
+
+nav .link {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+header {
+  text-align: center;
+  margin: 2rem;
+}
+
+.main-heading {
+  margin: 1rem;
+}
+
+.sub-heading {
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+.quiz-container {
+  border: 0.2rem solid var(--primary-color);
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.input-value {
+  font-size: large;
+  width: 100%;
+  margin: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  border: 0.2rem solid var(--primary-color);
+}
+
+.input-value:focus {
+  outline: none;
+  border-color: var(--focus-border);
+}
+
+input[type="radio"] {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.btn {
+  margin: 1rem;
+  width: 100%;
+  border: none;
+  background: var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  color: var(--white-color);
+  font-size: large;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  background: var(--primary-color);
+}
+
+#reset {
+  background: none;
+  border: 0.2rem solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+#reset:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+#output,
+#result {
+  margin: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+}

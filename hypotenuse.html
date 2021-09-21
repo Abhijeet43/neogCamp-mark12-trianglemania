@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Calculate Hypotenuse</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="link" href="index.html">Back Home</a>
+      </nav>
+      <header>
+        <h1 class="main-heading">Check Hypotenuse</h1>
+        <h2 class="sub-heading">Length of Hypotenuse = sqrt(a² + b²)</h2>
+      </header>
+      <main>
+        <div class="input-container">
+          <label for="a">
+            a =
+            <input type="number" class="input-value" id="a" required />
+          </label>
+        </div>
+        <div class="input-container">
+          <label for="b">
+            b =
+            <input type="number" class="input-value" id="b" required />
+          </label>
+        </div>
+        <button class="btn" id="btn-hypotenuse">Check Hypotenuse</button>
+        <button class="btn" id="btn-reset">Reset</button>
+        <div id="result"></div>
+      </main>
+    </div>
+    <script src="src/hypotenuse.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angles of △s</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a class="link" href="index.html">Back Home</a>
+      </nav>
+      <header>
+        <h1>Is Triangle?</h1>
+      </header>
+      <main>
+        <div class="input-container">
+          <label for=""
+            >angle1(in degrees)
+            <input
+              type="number"
+              min="1"
+              max="180"
+              class="input-value"
+              required
+            />
+          </label>
+        </div>
+        <div class="input-container">
+          <label for=""
+            >angle2(in degrees)
+            <input
+              type="number"
+              min="1"
+              max="180"
+              class="input-value"
+              required
+            />
+          </label>
+        </div>
+        <div class="input-container">
+          <label for=""
+            >angle3(in degrees)
+            <input
+              type="number"
+              class="input-value"
+              min="1"
+              max="180"
+              required
+            />
+          </label>
+        </div>
+
+        <button class="btn" id="btn-is-triangle">Check Triangle?</button>
+        <button class="btn" id="btn-reset">Reset</button>
+        <div id="output"></div>
+      </main>
+    </div>
+    <script src="src/isTriangle.js"></script>
+  </body>
+</html>
